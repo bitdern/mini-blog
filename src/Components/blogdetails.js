@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useFetch } from "./useFetch";
+import useFetch from "./usefetch";
 
 const BlogDetails = () => {
   const { id } = useParams();
