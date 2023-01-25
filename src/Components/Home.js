@@ -23,8 +23,6 @@ const Home = () => {
     },
   ]);
 
-  const [name, setName] = useState("dern daddu");
-
   const handleDelete = (id) => {
     const newBlogs = blogs.filter((blog) => blog.id !== id);
     setBlogs(newBlogs);
@@ -41,8 +39,6 @@ const Home = () => {
         blogs={blogs.filter((blog) => blog.topic === "Bitcoin")}
         title="Bitcoin Blogs"
       />
-      <button onClick={() => setName("dernpapi")}>change name</button>
-      <p>{name}</p>
     </div>
   );
 };
