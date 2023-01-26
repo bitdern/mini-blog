@@ -3,6 +3,7 @@ import Home from "./Components/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NewPoast from "./Components/newpoast";
 import BlogDetails from "./Components/blogdetails";
+import NotFound from "./Components/notfound";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/newpoast" element={<NewPoast />} />
             <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div>
