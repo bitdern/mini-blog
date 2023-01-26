@@ -1,7 +1,7 @@
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import NewPoast from "./Components/NewPoast";
+import NewPoast from "./Components/newpoast";
 import BlogDetails from "./Components/blogdetails";
 
 function App() {
